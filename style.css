@@ -1,0 +1,79 @@
+/* General Reset */
+body {
+    margin: 0; /* Remove default margin */
+    font-family: Arial, sans-serif; /* Set a clean font for the page */
+}
+
+/* Background styling */
+body {
+    background-image: url('back.jpg'); /* Background image */
+    background-size: small; /* Cover the small background */
+    background-position: center; /* Center the image */
+}
+
+/* Header styling */
+header {
+    text-align: center; /* Center text in header */
+    color: white; /* White text color */
+    padding: 20px; /* Space around the header */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+}
+
+/* Main content area */
+main {
+    padding: 20px; /* Space around the main content */
+}
+
+/* Container for product cards */
+.product-container {
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allow cards to wrap to the next line */
+    justify-content: center; /* Space cards evenly */
+    padding: 20px;
+}
+
+/* Individual product card styling */
+.product-card {
+    width: 350px; /* Fixed width for each card */
+    margin: 15px; /* Space around each card */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    border-radius: 8px; /* Rounded corners */
+    padding: 15px; /* Space inside the card */
+    background-color: white; /* White background for cards */
+    transition: transform 0.3s; /* Smooth transition for hover effect */
+}
+
+/* Card image styling */
+.product-card img {
+    width: 100%; /* Make the image fill the card width */
+    border-radius: 8px; /* Round the image corners */
+}
+
+/* Button styling */
+button {
+    background-color: #4CAF50; /* Green background for button */
+    color: white; /* White text color */
+    padding: 10px 20px; /* Space inside button */
+    border-radius: 5px; /* Rounded button corners */
+    border: none; /* Remove default border */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #45a049; /* Darker green when hovered */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .product-card {
+        width: 45% /* 2 cards per row on tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .product-card {
+        width: 100%; /* 1 card per row on mobile */
+    }
+}
